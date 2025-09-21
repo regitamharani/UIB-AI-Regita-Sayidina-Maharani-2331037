@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.env
+ai_env/
+*.egg-info
+.ipynb_checkpoints/
