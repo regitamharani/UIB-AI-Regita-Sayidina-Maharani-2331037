@@ -1,0 +1,14 @@
+Project: Fuzzy Rain Prediction
+
+Deskripsi Proyek:
+Proyek ini bertujuan untuk menerapkan konsep logika fuzzy dalam memprediksi kemungkinan terjadinya hujan berdasarkan data cuaca harian. Pendekatan fuzzy digunakan karena kondisi cuaca bersifat tidak pasti dan memiliki nilai yang tidak sepenuhnya “benar” atau “salah”, melainkan berada di antara dua keadaan (abu-abu). Dengan metode ini, prediksi menjadi lebih fleksibel dan realistis dibandingkan model deterministik.
+
+Data yang digunakan berasal dari dataset publik Kaggle “Rain Prediction: ANN”, kemudian diambil sekitar 80 sampel data untuk kebutuhan analisis sederhana. Beberapa fitur utama yang digunakan dalam sistem fuzzy ini meliputi:
+- Humidity3pm (Kelembapan pada pukul 15.00)
+- MinTemp(Suhu minimum harian)
+- WindSpeed3pm (Kecepatan angin pada pukul 15.00)
+
+Proses dilakukan dengan mendefinisikan fungsi keanggotaan (membership function) untuk setiap variabel dalam bentuk trapezoid dan segitiga (triangular). Selanjutnya, diterapkan beberapa aturan fuzzy sederhana (IF–THEN Rules) untuk menghasilkan output berupa Rain Likelihood Fuzzy, yaitu tingkat kemungkinan hujan dalam skala 0–1.
+
+Selain output utama, proyek ini juga menghasilkan insight tambahan berupa kolom baru, yaitu Dryness_Index, yang menggambarkan tingkat kekeringan berdasarkan kombinasi antara suhu dan kelembapan. Hasil analisis kemudian divisualisasikan menggunakan histogram dan scatter plot untuk melihat distribusi serta hubungan antara Dryness_Index dan Rain Likelihood Fuzzy.
+
